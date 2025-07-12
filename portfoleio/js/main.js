@@ -9,18 +9,18 @@ var typed = new Typed(".textt", {
 
 
 
-document.addEventListener("scroll", function () {
-    const elements = document.querySelectorAll('.cardd');
-    const windowHeight = window.innerHeight;
+// document.addEventListener("scroll", function () {
+//     const elements = document.querySelectorAll('.cardd');
+//     const windowHeight = window.innerHeight;
 
-    elements.forEach(function(element) {
-        const elementPosition = element.getBoundingClientRect().top;
+//     elements.forEach(function(element) {
+//         const elementPosition = element.getBoundingClientRect().top;
         
-        if (elementPosition < windowHeight - 100) { // يمكنك تعديل المسافة حسب الحاجة
-            element.classList.add('animat');
-        }
-    });
-})
+//         if (elementPosition < windowHeight - 100) { // يمكنك تعديل المسافة حسب الحاجة
+//             element.classList.add('animat');
+//         }
+//     });
+// })
 
 
 document.addEventListener("scroll", function () {
@@ -131,3 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+
