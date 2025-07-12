@@ -50,13 +50,13 @@ padding: 20px;
     animation-delay: 0s;
     animation: 1s spin linear infinite ;
 }
-.conttttop{
+.conttttop {
 
     height: max-content;
     padding-bottom: 3px;
-    background-image:conic-gradient(from var(--angle),rgb(221, 221, 221), rgb(241, 66, 107),rgb(112, 0, 0),rgb(221, 221, 221));
+    background-image:conic-gradient(from var(--angle),rgb(222, 151, 151), rgb(241, 66, 107),rgb(198, 24, 24),rgb(228, 152, 152));
     animation-delay: 0s;
-    
+   
     animation: 1s spin linear infinite ;
    position: relative;
 
@@ -68,10 +68,44 @@ padding: 20px;
     
     padding:2px;
     border-radius: 30px;
-
+    position: relative;
     background-image:conic-gradient(from var(--angle),rgb(221, 221, 221), rgb(241, 66, 107),rgb(112, 0, 0),rgb(221, 221, 221));
     animation-delay: 0s;
     animation: 1s spin linear infinite ;
+
+}
+.conttttop::after{
+
+content: "";
+position: absolute;
+width: 100%;
+bottom: 0;
+height:20px;
+    background-image:conic-gradient(from var(--angle),rgb(222, 151, 151), rgb(241, 66, 107),rgb(198, 24, 24),rgb(228, 152, 152));
+
+animation-delay: 0s;
+   
+animation: 1s spin linear infinite ;
+ filter: blur(1rem);
+ opacity: 0.8;
+}
+
+.conttt::after{
+ border-radius: 30px;
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+padding:3px;
+    background-image:conic-gradient(from var(--angle),rgb(222, 151, 151), rgb(241, 66, 107),rgb(198, 24, 24),rgb(228, 152, 152));
+z-index: -100000;
+animation-delay: 0s;
+   top: 0;
+   
+animation: 1s spin linear infinite ;
+ filter: blur(0.7rem);
+ opacity: 0.8;
+
 }
 .navbar a{
     margin: 0 30px;
@@ -185,7 +219,7 @@ animation: kloon 0.3s  0s    linear forwards;
 /*===============home===============*/
 .home3{
     /* height: 100vh; */
-    margin-top: 8rem !important;
+    /* margin-top: 8rem !important; */
 }
 .write {
     margin-right: 100px;
@@ -605,7 +639,7 @@ font-size: 2rem;
 
 .cardd {
 text-align: center !important;
-background-color: black;
+background-color: black !important;
  padding: 20px  20px !important;
  border-radius: 30px;
  
